@@ -1,4 +1,7 @@
 # Spotify Capstone Project - Data Engineering
+<img width="882" alt="Introduction" src="https://user-images.githubusercontent.com/35566310/210912089-2c5aa605-66ad-46a2-b3c8-01470b024775.png">
+<p align="justify"> 
+
 Almost 10 years back — that the then-nascent term “data engineering” started to pop up in modern highly data-driven scaleups and fast-growing tech companies such as Facebook, Netflix, LinkedIn and Airbnb. As these companies harnessed massive amounts of real-time data that could provide high business value, software engineers at these companies had to develop tools, platforms and frameworks to manage all this data with speed, scalability and reliability. From this, the data engineer job started evolving to a role that transitioned away from using traditional ETL tooling to developing their own tooling to manage the increasing data volumes. 
 
 As Data Engineers we built an ETL out of Spotify API using Apache Airflow and performed analysis using Tableau. The analysis mainly focused on user activity. We developed a python script that extracts data from user spotify account by using Spotipy API. Once the data is extracted we stored the data in SQL Server Management Studio (SSMS). We followed Star Schema method to store the data. Then we connected the database engine to Tableau, and developed dashboard in Tableau for Analysis. At Last we performed scheduling using Apache Airflow. 
@@ -18,3 +21,4 @@ We followed Star Schema approach to store the data in SSMS.
 
 # Scheduling and Automation using Apache Airflow
 We used Apache Airflow for Scheduling and Automation
+</p>
