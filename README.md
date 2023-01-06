@@ -4,7 +4,7 @@ Almost 10 years back — that the then-nascent term “data engineering” start
 As Data Engineers we built an ETL out of Spotify API using Apache Airflow and performed analysis using Tableau. The analysis mainly focused on user activity. We developed a python script that extracts data from user spotify account by using Spotipy API. Once the data is extracted we stored the data in SQL Server Management Studio (SSMS). We followed Star Schema method to store the data. Then we connected the database engine to Tableau, and developed dashboard in Tableau for Analysis. At Last we performed scheduling using Apache Airflow. 
 
 # Overall Architecture
-![Spotify_Architecture](https://user-images.githubusercontent.com/35566310/210908261-fea19bc0-a78a-45ff-a955-ff8ce97f55bb.png)
+<img width="841" alt="Spotify_Analysis_Architecture" src="https://user-images.githubusercontent.com/35566310/210908800-797a1999-80c6-4a2e-822b-a4324237bc6e.png">
 
 # About Spotify API
 We extracted data out of the Spotify API using this endpoint to get the 25 most recently played tracks. The result of calling this endpoint is a dictionary which we will then take and create multiple dataframes after cleaning it up a bit first.
