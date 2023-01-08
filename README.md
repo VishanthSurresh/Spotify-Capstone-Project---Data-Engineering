@@ -12,6 +12,17 @@ As Data Engineers we built an ETL out of Spotify API using Apache Airflow and pe
 # Overall Architecture
 ![overallArchitecture](https://user-images.githubusercontent.com/41756221/211175358-ec2deff8-9f1c-460d-bf0e-4db9e668eeed.png)
 
+# Directory Structure and Description
+  -> PowerBI reports
+            -> Spotify User Dashboard.pbix         - PowerBI Report File
+  -> SQL_Server_Database
+            -> spotify_analysis.mdf                - Database File
+  -> Python Files
+            -> main.py                             - main ETL file
+            -> airflow_etl.py                      - Airflow Scheduler DAG file
+            -> sql_functions.py                    - Functions to Load Data in SQL
+                 
+
 # About Spotify API
 <p align="justify">
 We extracted data out of the Spotify API using this endpoint to get the 25 most recently played tracks. The result of calling this endpoint is a dictionary which we will then take and create multiple dataframes after cleaning it up a bit first.
@@ -73,10 +84,10 @@ Save the ETL python files and <your DAG>.py in $AIRFLOW_HOME/dags (/root/airflow
 3. Apache Airflow
 4. SQL Server Management Studio
 
-Programming Language - Python
-Database Query Language - T-SQL
-Libraries Used - Pandas, SQLalchemy, urllib, Spotipy, Airflow, datetime
-Environment - Windows, Ubuntu
+* Programming Language - Python
+* Database Query Language - T-SQL
+* Libraries Used - Pandas, SQLalchemy, urllib, Spotipy, Airflow, datetime
+* Environment - Windows, Ubuntu
 
 # Limitations
 1. Spotify won’t allow to pull data for multiple users because of their security reasons. They allow users to pull data for single user account. 
