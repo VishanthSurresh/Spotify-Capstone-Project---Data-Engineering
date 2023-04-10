@@ -13,11 +13,8 @@ As Data Engineers we built an ETL out of Spotify API using Apache Airflow and pe
 ![overallArchitecture](https://user-images.githubusercontent.com/41756221/211175358-ec2deff8-9f1c-460d-bf0e-4db9e668eeed.png)
 
 # Directory Structure and Description
-PowerBI reports       -> Spotify User Dashboard.pbix         - PowerBI Report File
-SQL_Server_Database   -> spotify_analysis.mdf                - Database File
-Python Files          -> main.py                             - main ETL file
-                      -> airflow_etl.py                      - Airflow Scheduler DAG file
-                      -> sql_functions.py                    - Functions to Load Data in SQL
+![image](https://user-images.githubusercontent.com/35566310/230944352-3868495b-7e72-4d39-a8ea-da78071080bd.png)
+
                  
 
 # About Spotify API
