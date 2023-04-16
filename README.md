@@ -6,7 +6,7 @@ Almost 10 years back — that the then-nascent term “data engineering” start
 </p>
 
 <p align="justify">
-As Data Engineers we built an ETL out of Spotify API using Apache Airflow and performed analysis using PowerBI. The analysis mainly focused on user activity. We developed a python script that extracts data from user spotify account by using Spotipy API. Once the data is extracted we stored the data in SQL Server Management Studio (SSMS). We followed Star Schema method to store the data. Then we connected the database engine to PowerBI, and developed dashboard in PowerBI for Analysis. At Last we performed scheduling using Apache Airflow. Our Project is a complete On-Premise solution.
+As Data Engineers we built an ETL out of Spotify API using Apache Airflow and performed analysis using PowerBI. The analysis mainly focused on user activity. We developed a python script that extracts data from user spotify account by using Spotipy API. Once the data is extracted we stored the data in SQL Server Management Studio (SSMS). We followed Snowflake Schema method to store the data. Then we connected the database engine to PowerBI, and developed dashboard in PowerBI for Analysis. At Last we performed scheduling using Apache Airflow. Our Project is a complete On-Premise solution.
 </p>
 
 # Overall Architecture
@@ -27,7 +27,7 @@ We extracted data out of the Spotify API using this endpoint to get the 25 most 
 We can connect to SSMS directly from Python using SQLalchemy library. Once the necessary libraries are installed we can connect to SSMS using Windows Authentication or using username and password. We used Windows authentication to connect SSMS, while connecting to SSMS we have to mention the user name and Database name. After a successful connection one can load the data directly from python to SSMS. 
 </p>
 
-We followed Star Schema approach to store the data in SSMS.
+We followed Snowflake Schema approach to store the data in SSMS.
 
 ![Database_Schema](https://user-images.githubusercontent.com/35566310/210902041-7ab9a7f7-abc5-496b-836b-a9d517db5704.jpeg)
 
